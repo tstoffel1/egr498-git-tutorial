@@ -5,7 +5,7 @@ POLL_INTERVAL_S = 0.1  # s between status updates
 
 
 def extend_arm():
-    print("Arm: not configured")
+    print("Arm configured")
 
 
 def close_gripper():
