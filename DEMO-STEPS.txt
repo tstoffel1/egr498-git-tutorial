@@ -1,0 +1,55 @@
+CLASS DEMONSTRATION
+
+Open these files from egr498-git-tutorial:
+  slides/version-control-and-git.pdf  Presentation
+  PROJECT.md                        First edit in a text editor, with autosave off
+  rro_demo.py                       Python examples
+
+GitHub Desktop: repository egr498-git-tutorial, branch demo.
+Before step 1, select Current Branch / demo in GitHub Desktop. Make every tutorial edit on demo until the arm-feature step. main is the clean starting version.
+Run from this folder: python3 rro_demo.py
+
+1. SAVE AND COMMIT
+Add We will test the arm function. to PROJECT.md.
+Show the unsaved editor, click Save, then show git status --short and Desktop Changes.
+Commit Describe the arm test, then Push origin.
+
+2. CHANGE THE PROGRAM
+In rro_demo.py change POLL_INTERVAL_S from 0.5 to 0.1.
+Save, run, inspect the diff, and commit Set status interval to 0.1 s. Push origin.
+
+3. INSPECT HISTORY
+Select that commit in History. Show its message, identifier, and diff.
+Selecting a commit does not restore the old files.
+
+4. MAKE AND REVERT A MISTAKE
+Change 0.1 to -0.1. Save and commit Test negative status interval.
+Run to show the error. In History, right-click that commit and choose Revert Changes in Commit.
+Run successfully and push. Revert creates a new commit that undoes the bad change.
+
+5. CREATE A BRANCH
+Create arm-feature from the recovered demo version.
+In extend_arm(), replace the print line with print("Arm extended").
+Save, run, and commit Add the arm demonstration.
+Switch back to demo. Its arm function is still unconfigured.
+
+6. PULL A TEAMMATE'S CHANGE
+Open this exact browser link:
+https://github.com/tstoffel1/egr498-git-tutorial/edit/demo/rro_demo.py
+Change only close_gripper() to print("Gripper closed").
+Commit directly to demo as Add the gripper demonstration.
+Explain that your account is representing a teammate.
+In Desktop, Fetch origin and Pull origin. Show the new gripper line locally.
+
+7. MERGE
+Stay on demo. Choose Branch / Merge into current branch.
+Select arm-feature and merge.
+Run to show Arm extended, Gripper closed, and the three status updates. Push origin.
+
+8. EXPLAIN THE PI AND THE ASSIGNMENT
+The Pi has a separate clone. A laptop push does not update or restart its program.
+Open the sibling team-assignment folder, then Blue or Gold.
+Show that team's README and team-roster.txt. Students complete the exercise after class.
+
+Target 25 minutes. Start editing by minute 9, finish the revert by minute 15,
+and finish the merge by minute 21.
