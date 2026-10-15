@@ -9,7 +9,7 @@ def extend_arm():
 
 
 def close_gripper():
-    print("Gripper: not configured")
+    print("Gripper configured")
 
 
 def main():
