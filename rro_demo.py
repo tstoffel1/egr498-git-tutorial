@@ -1,7 +1,7 @@
 """RRO demonstration. Printed messages stand in for robot actions."""
 from time import sleep
 
-POLL_INTERVAL_S = 0.1  # s between status updates
+POLL_INTERVAL_S = -0.1  # s between status updates
 
 
 def extend_arm():
